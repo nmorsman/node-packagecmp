@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var fmt = require('util').format;
+var cmp = require('./../packagecmp');
+
+cmp(process.cwd(), function(err, deps) {
+    if (err) {
+        process.stderr.write(err + '\n');
+        process.exit(1);
+    }
+
+    for (var i in deps) {
+        process.stdout.write(fmt('Module: %s, wanted: %s, current: %s\n', i, deps[i].wanted, deps[i].current));
+
+        if (!deps[i].satisfies) {
+            process.stderr.write(fmt('Module %s did not satisfy, exiting\n', i));
+            process.exit(1);
+        }
+    }
+});

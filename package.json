@@ -1,0 +1,24 @@
+{
+  "name": "packagecmp",
+  "description": "Compare installed Node modules with package.json",
+  "author": "nmorsman",
+  "version": "0.1.0",
+  "main": "packagecmp.js",
+  "homepage": "https://github.com/nmorsman/node-packagecmp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmorsman/node-packagecmp.git"
+  },
+  "dependencies": {
+      "async": "1.5.0",
+      "semver": "5.1.0"
+  },
+  "keywords": [
+    "package",
+    "module",
+    "comparison"
+  ],
+  "bugs": {
+    "url": "https://github.com/nmorsman/node-packagecmp/issues"
+  }
+}
