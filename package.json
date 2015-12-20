@@ -2,7 +2,7 @@
   "name": "packagecmp",
   "description": "Compare installed Node modules with package.json",
   "author": "nmorsman",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "packagecmp.js",
   "homepage": "https://github.com/nmorsman/node-packagecmp",
   "repository": {
