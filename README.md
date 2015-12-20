@@ -16,7 +16,7 @@ The CLI throws exit code 1 if a module is missing or it encounters a version mis
 
 #### CLI
 
-`packagecmp`
+`packagecmp [PATH]`
 
 
 #### NodeJS
